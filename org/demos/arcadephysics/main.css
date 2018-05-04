@@ -1,0 +1,27 @@
+html, document, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+canvas#playarea{
+    background:black;
+}
+#instructions{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    pointer-events: none;
+}
+#tweak-form{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    
+}
+#tweak-form label{
+    color: white;
+}
+#gravity{
+    line-height: 2em;
+}

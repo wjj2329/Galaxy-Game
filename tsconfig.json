@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "server/*": ["src/server/*"],
+            "client/*": ["src/client/*"],
+            "shared/*": ["src/shared/*"],
+            "*": [
+                "node_modules/*",
+                "src/types/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/client/**/*"
+    ]
+}

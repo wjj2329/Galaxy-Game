@@ -1,0 +1,47 @@
+{
+  "name": "galxy.io",
+  "version": "0.0.1",
+  "description": "A gravity-based casual real-time MMO game",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "npm run tslint && npm run build-ts && npm run webpack",
+    "serve": "node dist/server.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "webpack": "webpack",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "format": "tslint -c tslint.json -p tsconfig.json --fix",
+    "test": "jest --forceExit --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kupiakos/galxy.io.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kupiakos/galxy.io/issues"
+  },
+  "homepage": "https://github.com/kupiakos/galxy.io#readme",
+  "dependencies": {
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.2",
+    "rxjs": "^5.5.6",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.11.1",
+    "@types/jest": "^22.1.2",
+    "@types/socket.io": "^1.4.31",
+    "@types/socket.io-client": "^1.4.32",
+    "awesome-typescript-loader": "^5.0.0-0",
+    "copy-webpack-plugin": "^4.5.1",
+    "copyfiles": "^1.2.0",
+    "jest": "^22.2.2",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "^22.0.4",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
+  }
+}
